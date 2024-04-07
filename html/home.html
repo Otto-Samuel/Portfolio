@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otto_Samuel</title>
+    <link rel="stylesheet" href="../style/home.css">
+    <link rel="stylesheet" href="../style/about.css">
+    <link rel="stylesheet" href="../style/skills.css">
+    <link rel="shortcut icon" href="../img/programador.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khojki&display=swap" rel="stylesheet">
+</head>
+<body onload="">
+  <section>
+    <section id="home" >
+        <header id="parte-cima">
+            <div class="botoes-esquerdo">
+                <a href="#home"><button class="botao">HOME</button></a>
+                <a href="#about"><button class="botao" >ABOUT</button></a>
+                <a href="#skills"><button class="botao">SKILLS</button></a>
+                <a href="#services"><button class="botao">SERVICES</button></a>
+            </div>
+    
+            <div class="botao-direito">
+                <button id="contact" onclick="openModal()">CONTACT</button>
+            </div>    
+        </header>
+
+        <div class="principal">
+            <div>
+                <img class="img-profile" src="../img//120262913.jpg" alt="perfil">
+            </div>
+
+            <div class="banner-principal">
+                <h1 class="home_title">Hi,<br>I'am<span class="home_title-color"> Otto Samuel</span><br><span id="course">Computer Science</span></h1>
+                <p id="welcome" class="home-more"></p>
+                <div style="margin-left:120px;">
+                    <img class="img-logo" id="github_ottosamuel" height="45px" width="45px" src="../img/github-icon.png" onpress="github()" alt="github">
+                    <img class="img-logo" id="facebook_ottosamuel" height="45px" width="45px" src="../img/facebook-icon.png" onpress="facebook()" alt="facebook">
+                    <img class="img-logo" id="instagram_ottosamuel" height="45px" width="45px" src="../img/instagram-icon.png" alt="instagram">
+                    <img class="img-logo" id="linkedin_ottosamuel" height="45px" width="45px" src="../img/linkedin-icon.png" alt="linkedin">
+                </div>
+            </div>
+        </div>
+
+        <center>
+            <a href="#about">
+                <div class="scroll-icon ex-1">
+                    <span class="wheel"></span>
+                </div>
+                <br>
+            </a>
+        </center>
+    </section>  
+    
+    <div id="linha1">
+        <p></p>
+    </div>
+
+    <!-- Div flutuante para contato -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img src="../img/3301602.jpg" id="img-contact" alt="contato-programador">
+            <p>Entre em contato:</p>
+            <p style="margin-left: 20px;"><img src="../img/icons8-perímetro-virtual-24.png" id="icons" alt="marcador"> Localização: Ananideua - Pará - Brasil</p>
+            <p style="margin-left: -40px;"><img src="../img/icons8-nova-mensagem-24.png" id="icons" alt="envelope"> Email: ottos565@gmail.com</p>
+           
+            <p style="margin-left: -30px;"><img src="../img/icons8-telefone-24.png" id="icons" alt="telefone"> Telefone: +55 (91)99257-5488</p>
+            <button onclick="closeModal()">Fechar</button>
+        </div>
+    </div>
+
+    <section id="about" >
+        <div class="about-me">
+            <h1 class="about-title">About <span class="me">Me</span></h1>
+            <p id="about-p" class="about-p">
+                I am a 19 year old young man, student
+                and programmer passionate about technology,
+                my journey in this world of programming began in 2021,
+                that was when I started studying Computer Science and after that I expanded
+                my knowledge to other areas such as data science, Interface Software and Computer Networks.
+            </p>
+            <p id="mostrar"></p>
+            <button class="about-button">→ read more</button>
+            
+            <div>
+              <img src="../img/Programming-bro.png" class="programming-bro" alt="Programming-bro">
+    
+            </div>
+        </div>           
+    </section>
+
+    
+    <div id="linha2">
+        <p></p>
+    </div>
+
+    <section id="skills" >
+        <div >
+            <h1 class="skills-title">Skills</h1>
+            <p class="skills-subtitulo">My skills as a student programmer</p>
+        </div>
+
+        <div class="container-skills">
+            <div class="box-skills1">
+              <div class="banner-skill1"></div>
+                <div class="skills-img">
+                    <img src="../img2/icons8-html-144.png" alt="">
+                </div>
+
+                
+              
+                <h3 id="skill-h3">HTML</h3>
+                <div class="skill-box1">
+                    
+                    <div class="skill-bar1">
+                        <span class="skill-per1 html2">
+                            <span class="tooltip1">80%</span>
+                        </span>
+                    </div>
+                </div>
+                <p>Linguagem de marcação usada para criar páginas da web. O HTML consiste em elementos que são usados para definir a estrutura e o conteúdo de uma página</p>
+                
+            </div>
+
+            <div class="box-skills2">
+                <div class="banner-skill2"></div>
+                <div class="skills-img">
+                    <img src="../img2/icons8-css-144.png" alt="">
+                </div>
+                <h3 id="skill-h3">CSS</h3>
+
+                <div class="skill-box2">
+                    
+                    <div class="skill-bar2">
+                        <span class="skill-per2 html2">
+                            <span class="tooltip2">50%</span>
+                        </span>
+                    </div>
+                </div>
+                <p>Linguagem de estilo usada para controlar a apresentação de páginas web.</p>
+                
+            </div>
+
+            <div class="box-skills3">
+                <div class="banner-skill3"></div>
+                <div class="skills-img">
+                    <img src="../img2/icons8-javascript-144.png" alt="">
+                </div>
+                
+                <h3 id="skill-h3">JAVASCRIPT</h3>
+                <div class="skill-box3">
+                    
+                    <div class="skill-bar3">
+                        <span class="skill-per3 html3">
+                            <span class="tooltip3">20%</span>
+                        </span>
+                    </div>
+                </div>
+                <p>Linguagem de programação que permite a você implementar itens complexos em páginas web</p>
+                
+            </div>
+
+            <div class="box-skills4">
+                <div class="banner-skill4"></div>
+                <div class="skills-img">
+                    <img src="../img2/icons8-python-144.png" alt="">
+                </div>
+                <h3 id="skill-h3">PYTHON</h3>
+                <div class="skill-box4">
+                    
+                    <div class="skill-bar4">
+                        <span class="skill-per4 html4">
+                            <span class="tooltip4">45%</span>
+                        </span>
+                    </div>
+                </div>
+                <p>Linguagem de programação de alto nível, interpretada e de propósito geral, é conhecida por sua sintaxe simples e legível</p>
+                
+            </div>
+
+            <div class="box-skills5" >
+                <div class="banner-skill5"></div>
+                <div class="skills-img">
+                    <img src="../img2/icons8-c-sharp-logo-2-144.png" alt="">
+                </div>
+                <h3 id="skill-h3">Csharp</h3>
+                <div class="skill-box5">
+                    
+                    <div class="skill-bar5">
+                        <span class="skill-per5 html5">
+                            <span class="tooltip5">45%</span>
+                        </span>
+                    </div>
+                </div>
+                <p>Linguagem de programação orientada a objetos desenvolvida pela Microsoft.</p>
+                
+            </div>
+
+            <div class="box-skills6" ">
+                <div class="banner-skill6"></div>
+                <div class="skills-img">
+                    <img src="../img2/icons8-c-programming-144.png" alt="">
+                </div>
+                <h3 id="skill-h3">C</h3>
+                <div class="skill-box6">
+                    
+                    <div class="skill-bar6">
+                        <span class="skill-per6 html6">
+                            <span class="tooltip6">80%</span>
+                        </span>
+                    </div>
+                </div>
+                <p>Linguagem de programação de alto nível, criada por Dennis Ritchie em 1972. É uma linguagem poderosa e versátil, amplamente utilizada em sistemas operacionais</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <div id="linha3">
+        <p></p>
+    </div>
+
+    <section id="services">
+        <div >
+            <h1 class="skills-title">Services</h1>
+            <p class="skills-subtitulo">not found :(</p>
+        </div>
+
+    </section>
+
+</section>
+<button id="editButton" class="floating-button" onclick="toggleEditMode()">&#9998;</button>
+
+    <script src="../js/home.js"></script>
+</body>
+</html>
