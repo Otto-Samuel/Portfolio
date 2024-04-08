@@ -1,4 +1,4 @@
-# ☕ Portfolio - oficial 💻
+**<h1 align="center"> ☕ Portfolio - oficial 💻</h1>**
 
  #### Bem-vindo ao site oficial do portfólio, onde você pode explorar minha jornada profissional, projetos, habilidades e conquistas, fornecendo informações sobre meus conhecimentos e capacidades.
 
