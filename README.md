@@ -13,7 +13,7 @@ Aqui estão alguns dos meus projetos mais recentes:
 
 Descrição breve do projeto 1.
 
-- Tecnologias utilizadas: $ Csharp, .NET$
+- Tecnologias utilizadas: $Csharp, .NET$
 - Link para o projeto: [formulario_WindowsForms](https://github.com/Otto-Samuel/formulario_WindowsForms)
 
 ### 📍 Projeto 2
