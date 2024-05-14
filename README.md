@@ -13,8 +13,8 @@ Aqui estão alguns dos meus projetos mais recentes:
 
 Descrição breve do projeto 1.
 
-- Tecnologias utilizadas: $ReactJS, Node.js, MongoDB$
-- Link para o projeto: [Projeto 1](link_para_o_projeto1)
+- Tecnologias utilizadas: $C#, .NET$
+- Link para o projeto: [formulario_WindowsForms](https://github.com/Otto-Samuel/formulario_WindowsForms)
 
 ### 📍 Projeto 2
 
