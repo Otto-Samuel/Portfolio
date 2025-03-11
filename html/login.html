@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="../img2/user.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khojki&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../fonts/Lohit-Devanagari.ttf">
+</head>
+<body>
+    <div class="fundo">
+        <div class="container">
+            <div class="content first-content">
+                <div class="first-column">
+                    <h2 class="title title-primary">welcome back!</h2>
+                    <p class="description description-primary">To keep connected with us please login with your personal info</p>
+                    <button id="signin" class="btn btn-primary" onclick="guest()">Join guest</button>
+                </div>    
+                <div class="second-column">
+                    <h2 class="title title-second">Login</h2>
+                    
+                    <form id="loginForm" class="form">
+                        <label class="label-input">
+                            <i class="far fa-user icon-modify"></i>
+                            <input id="name" type="text" placeholder="  Name">
+                        </label>
+                        
+                        <label class="label-input">
+                            <i class="far fa-envelope icon-modify"></i>
+                            <input id="email" type="email" placeholder="  Email">
+                        </label>
+                        
+                        <label class="label-input">
+                            <i class="fas fa-lock icon-modify"></i>
+                            <input id="password" type="password" placeholder="  Password">
+                            <span toggle="#password" class="far fa-eye icon-eye" id="togglePassword"></span>
+                        </label>
+                        
+                        <button type="submit" class="btn btn-second">Login Into</button>        
+                    </form>
+                </div><!-- second column -->
+            </div><!-- first content -->
+        </div>
+    </div>
+
+
+
+    <script src="../js/Login.js"></script>
+</body>
+</html>

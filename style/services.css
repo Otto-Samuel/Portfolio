@@ -1,0 +1,79 @@
+/* Estilização da seção de serviços */
+#services {
+    background-color: #111;
+    color: #fff;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabeçalho de serviços */
+.services-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-title {
+    font-size: 28px;
+    color: #00ffcc;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.services-subtitle {
+    font-size: 16px;
+    color: #bbb;
+    margin-bottom: 30px;
+}
+
+/* Container de cards de serviços */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Cards de serviços */
+.service-card {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 15px rgba(0, 255, 204, 0.5);
+}
+
+.service-title {
+    font-size: 1.5rem;
+    color: #00ffcc;
+    margin-bottom: 15px;
+}
+
+.service-description {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #services {
+        padding: 40px 20px;
+    }
+
+    .services-container {
+        width: 100%;
+    }
+
+    .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

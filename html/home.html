@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(Portfólio) Otto_Samuel</title>
+    <link rel="stylesheet" href="../style/home.css">
+    <link rel="stylesheet" href="../style/about.css">
+    <link rel="stylesheet" href="../style/skills.css">
+    <link rel="shortcut icon" href="../img/programador.png" type="image/x-icon">
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../style/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../style/services.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khojki&display=swap" rel="stylesheet">
+    
+</head>
+<body onload="">
+  <section>
+    <section id="home" >
+        <header id="parte-cima">
+            <div class="botoes-esquerdo">
+                <a href="#home"><button class="botao">INICIO</button></a>
+                <a href="#about"><button class="botao" >SOBRE MIM</button></a>
+                <a href="#skills"><button class="botao">SKILLS</button></a>
+                <a href="#projects"><button class="botao">PROJETOS</button></a>
+                <a href="#services"><button class="botao">SERVIÇOS</button></a>
+                
+                
+            </div>
+            <!-- dar uma olhada aqui  -->
+
+            <div class="botao-direito">
+                
+                <button id="contact" onclick="openModal()">contato</button>
+                
+            </div>
+
+
+        </header>
+
+        <div class="principal">
+            <div>
+                <img class="img-profile" src="../img/foto-de-perfil.jpg" alt="perfil">
+            </div>
+
+            <div class="banner-principal">
+                <h1 class="home_title">Oi,<br>Eu sou<span class="home_title-color"> Otto Samuel</span><br><span id="course">Cientista da computaçao</span></h1>
+                <p id="welcome" class="home-more"></p>
+                <div style="margin-left:120px;">
+                    <img class="img-logo" id="github_ottosamuel" height="45px" width="45px" src="../img/github-icon.png" onpress="github()" alt="github">
+                    <img class="img-logo" id="facebook_ottosamuel" height="45px" width="45px" src="../img/facebook-icon.png" onpress="facebook()" alt="facebook">
+                    <img class="img-logo" id="instagram_ottosamuel" height="45px" width="45px" src="../img/instagram-icon.png" alt="instagram">
+                    <img class="img-logo" id="linkedin_ottosamuel" height="45px" width="45px" src="../img/linkedin-icon.png" alt="linkedin">
+                </div>
+            </div>
+        </div>
+
+        <center>
+            <a href="#about">
+                <div class="scroll-icon ex-1">
+                    <span class="wheel"></span>
+                </div>
+                <br>
+            </a>
+        </center>
+    </section>  
+    
+    <!--
+    <div id="linha1">
+        <p></p>
+    </div>
+    -->
+
+    <!-- Div flutuante para contato -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img src="../img/3301602.jpg" id="img-contact" alt="contato-programador">
+            <p>Entre em contato:</p>
+            <p style="margin-left: 20px;"><img src="../img/icons8-perímetro-virtual-24.png" id="icons" alt="marcador"> Localização: Ananideua - Pará - Brasil</p>
+            <p style="margin-left: -40px;"><img src="../img/icons8-nova-mensagem-24.png" id="icons" alt="envelope"> Email: ottos565@gmail.com</p>
+           
+            <p style="margin-left: -30px;"><img src="../img/icons8-telefone-24.png" id="icons" alt="telefone"> Telefone: +55 (91)99257-5488</p>
+            <button onclick="closeModal()">Fechar</button>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="about-me">
+            <h1 class="about-title">Sobre mim</h1>
+            <p id="about-p" class="about-p">
+                Sou um jovem de 21 anos, estudante
+                e programador apaixonado por tecnologia,
+                minha jornada nesse mundo da programação começou em 2021,
+                foi quando comecei a estudar Ciência da Computação e depois disso expandi
+                meus conhecimentos para outras áreas como ciência de dados, Software de Interface e Redes de Computadores.
+            </p>
+            <p id="mostrar" class="about-p" style="display: none;"> 
+                Além disso, tenho me aventurado na construção de projetos em diversos frameworks e linguagens, como Python, JavaScript, e Java. Estou sempre em busca de aprendizado contínuo e novas experiências para me tornar um desenvolvedor mais completo.
+            </p>
+            <button id="about-button" class="about-button">→ ler mais</button>
+            
+            <div>
+                <img src="../img/Programming-bro.png" class="programming-bro" alt="Programming-bro">
+            </div>
+        </div>           
+    </section>
+    
+
+    
+    <div id="linha2">
+        
+    </div>
+
+    <section id="skills" >
+        <div >
+            <h1 class="skills-title">Skills</h1>
+            <p class="skills-subtitulo">Minhas habilidades como programador estudante</p>
+        </div>
+
+        <div class="container-skills">
+                <div class="box-skills1">
+                <div class="banner-skill1"></div>
+                    <div class="skills-img">
+                        <img src="../img2/icons8-html-144.png" alt="">
+                    </div>
+
+                    <h3 id="skill-h3">HTML</h3>
+                    <div class="skill-box1">
+                        
+                        <div class="skill-bar1">
+                            <span class="skill-per1 html2">
+                                <span class="tooltip1">80%</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-skills2">
+                    <div class="banner-skill2"></div>
+                    <div class="skills-img">
+                        <img src="../img2/icons8-css-144.png" alt="">
+                    </div>
+                    <h3 id="skill-h3">CSS</h3>
+
+                    <div class="skill-box2">
+                        
+                        <div class="skill-bar2">
+                            <span class="skill-per2 html2">
+                                <span class="tooltip2">50%</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-skills3">
+                    <div class="banner-skill3"></div>
+                    <div class="skills-img">
+                        <img src="../img2/icons8-javascript-144.png" alt="">
+                    </div>
+                    
+                    <h3 id="skill-h3">JAVASCRIPT</h3>
+                    <div class="skill-box3">
+                        
+                        <div class="skill-bar3">
+                            <span class="skill-per3 html3">
+                                <span class="tooltip3">20%</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-skills4">
+                    <div class="banner-skill4"></div>
+                    <div class="skills-img">
+                        <img src="../img2/icons8-python-144.png" alt="">
+                    </div>
+                    <h3 id="skill-h3">PYTHON</h3>
+                    <div class="skill-box4">
+                        
+                        <div class="skill-bar4">
+                            <span class="skill-per4 html4">
+                                <span class="tooltip4">45%</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-skills5" >
+                    <div class="banner-skill5"></div>
+                    <div class="skills-img">
+                        <img src="../img2/icons8-c-sharp-logo-2-144.png" alt="">
+                    </div>
+                    <h3 id="skill-h3">Csharp</h3>
+                    <div class="skill-box5">
+                        
+                        <div class="skill-bar5">
+                            <span class="skill-per5 html5">
+                                <span class="tooltip5">45%</span>
+                            </span>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="box-skills6">
+                    <div class="banner-skill6"></div>
+                    <div class="skills-img">
+                        <img src="../img2/icons8-c-programming-144.png" alt="">
+                    </div>
+                    <h3 id="skill-h3">C</h3>
+                    <div class="skill-box6">
+                        
+                        <div class="skill-bar6">
+                            <span class="skill-per6 html6">
+                                <span class="tooltip6">80%</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-skills7">
+                <div class="banner-skill7"></div>
+                    <div class="skills-img">
+                        <img src="../img2/icons8-postgresql-144.png" alt="">
+                    </div>
+
+                    <h3 id="skill-h3">PostgreSQL</h3>
+                    <div class="skill-box7">
+                        
+                        <div class="skill-bar7">
+                            <span class="skill-per7 html7">
+                                <span class="tooltip7">66%</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-skills8">
+                    <div class="banner-skill8"></div>
+                        <div class="skills-img">
+                            <img src="../img2/excel-domine-editor-planilhas.png" alt="">
+                        </div>
+    
+                        <h3 id="skill-h3">Excel</h3>
+                        <div class="skill-box8">
+                            
+                            <div class="skill-bar8">
+                                <span class="skill-per8 html8">
+                                    <span class="tooltip8">50%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-skills9">
+                        <div class="banner-skill9"></div>
+                            <div class="skills-img">
+                                <img src="../img2/arduino.png" alt="">
+                            </div>
+        
+                            <h3 id="skill-h3">Arduino</h3>
+                            <div class="skill-box9">
+                                
+                                <div class="skill-bar9">
+                                    <span class="skill-per9 html9">
+                                        <span class="tooltip9">36%</span>
+                                    </span>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="box-skills10">
+                        <div class="banner-skill10"></div>
+                            <div class="skills-img">
+                                <img src="../img2/power-bi-desktop-construindo-primeiro-dashboard.png" alt="">
+                            </div>
+        
+                            <h3 id="skill-h3">Power BI</h3>
+                            <div class="skill-box10">
+                                
+                                <div class="skill-bar10">
+                                    <span class="skill-per10 html10">
+                                        <span class="tooltip10">70%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            
+                    </div>
+
+        </div>
+    </section>
+
+    <div id="linha3">
+        <p></p>
+    </div>
+
+
+    <section id="projects">
+    
+        <div class="categories">
+            <h2>Categorias</h2>
+            <div class="category-item active" data-category="all">Todos</div>
+            <div class="category-item" data-category="frontend">Front-end</div>
+            <div class="category-item" data-category="backend">Back-end</div>
+            <div class="category-item" data-category="datascience">Data Science</div>
+        </div>
+    
+        <div class="projects-container">
+            <div class="project-card frontend active">
+                <img src="../img/project1.jpg" alt="Project 1" class="project-image">
+                <h3 class="project-title">Projeto Front-end</h3>
+                <p class="project-description">Projeto usando HTML, CSS e JavaScript.</p>
+    
+                <div class="project-tech">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js"></i>
+                </div>
+    
+                <a href="https://github.com/project1" target="_blank" class="project-link">ver no GitHub</a>
+            </div>
+    
+            <div class="project-card backend active">
+                <img src="../img/project2.jpg" alt="Project 2" class="project-image">
+                <h3 class="project-title">Projeto Back-end</h3>
+                <p class="project-description">API desenvolvida com Node.js e Express.</p>
+    
+                <div class="project-tech">
+                    <i class="fab fa-node"></i>
+                    <i class="fab fa-js"></i>
+                    <i class="fas fa-database"></i>
+                </div>
+    
+                <a href="https://github.com/project2" target="_blank" class="project-link">ver no GitHub</a>
+            </div>
+    
+            <div class="project-card datascience active">
+                <img src="../img/project3.jpg" alt="Project 3" class="project-image">
+                <h3 class="project-title">Projeto Data Science</h3>
+                <p class="project-description">Análise de dados usando Python e Pandas.</p>
+    
+                <div class="project-tech">
+                    <i class="fab fa-python"></i>
+                    <i class="fas fa-chart-line"></i>
+                </div>
+    
+                <a href="https://github.com/project3" target="_blank" class="project-link">ver no GitHub</a>
+            </div>
+
+            <div class="project-card datascience active">
+                <img src="../img/project3.jpg" alt="Project 3" class="project-image">
+                <h3 class="project-title">Projeto Data Science</h3>
+                <p class="project-description">Análise de dados usando Python e Pandas.</p>
+    
+                <div class="project-tech">
+                    <i class="fab fa-python"></i>
+                    <i class="fas fa-chart-line"></i>
+                </div>
+    
+                <a href="https://github.com/project3" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+
+            <div class="project-card datascience active">
+                <img src="../img/project3.jpg" alt="Project 3" class="project-image">
+                <h3 class="project-title">Projeto Data Science</h3>
+                <p class="project-description">Análise de dados usando Python e Pandas.</p>
+    
+                <div class="project-tech">
+                    <i class="fab fa-python"></i>
+                    <i class="fas fa-chart-line"></i>
+                </div>
+    
+                <a href="https://github.com/project3" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+
+            <div class="project-card datascience active">
+                <img src="../img/project3.jpg" alt="Project 3" class="project-image">
+                <h3 class="project-title">Projeto Data Science</h3>
+                <p class="project-description">Análise de dados usando Python e Pandas.</p>
+    
+                <div class="project-tech">
+                    <i class="fab fa-python"></i>
+                    <i class="fa-brands fa-java"></i>
+                </div>
+    
+                <a href="https://github.com/project3" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <div id="linha4">
+        <p></p>
+    </div> 
+
+    <section id="services">
+        <div class="services-header">
+            <h1 class="services-title">Meus Serviços</h1>
+            <p class="services-subtitle">Veja os serviços que ofereço</p>
+        </div>
+    
+        <div class="services-container">
+            <div class="service-card">
+                <h3 class="service-title">Desenvolvedor de Software</h3>
+                <p class="service-description">Criação de aplicativos, sistemas e websites com foco em qualidade e performance.</p>
+            </div>
+    
+            <div class="service-card">
+                <h3 class="service-title">Analista de Dados</h3>
+                <p class="service-description">Análise de dados para gerar insights e tomar decisões estratégicas com base em dados reais.</p>
+            </div>
+    
+            <div class="service-card">
+                <h3 class="service-title">Consultoria em TI</h3>
+                <p class="service-description">Orientação técnica e consultoria em soluções de TI para empresas e startups.</p>
+            </div>
+    
+            <div class="service-card">
+                <h3 class="service-title">Desenvolvimento de IA</h3>
+                <p class="service-description">Criação de soluções baseadas em inteligência artificial para otimização de processos e inovação.</p>
+            </div>
+        </div>
+    </section>
+    
+
+  </section>
+ <button id="editButton" class="floating-button" onclick="toggleEditMode()">&#9998;</button>
+
+    <script src="../js/home.js"></script>
+    <script src="../js/projects.js"></script>
+
+   
+</body>
+</html>

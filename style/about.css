@@ -1,0 +1,212 @@
+#linha1{
+    height: 0.1px;
+    width: 100%;
+    margin-top: 5px;
+    background-color: #9c9c9c89;
+}
+
+#linha2{
+    height: 0.1px;
+    width: 100%;
+    margin-top: -11rem;
+    background-color: #9c9c9c89;
+}
+
+#linha3{
+    height: 0.1px;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #9c9c9c89;
+}
+
+#linha4{
+    height: 0.1px;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #9c9c9c89;
+}
+
+/*---------------- aboute me----------------*/
+.about-me{
+  
+    justify-content: center;
+    background-color: transparent;
+    width: 600px;
+    margin-left: 200px;
+    margin-top: 7%;
+    text-align: justify;
+    margin-bottom: 90px;
+    align-items: center;
+    height: 75vh;
+    flex-direction: row-reverse; /* Inverte a ordem dos itens na linha */
+    
+}
+
+.about-me {
+    position: relative;
+}
+
+.about-me .about-p {
+    flex: 1; /* Faz o texto ocupar todo o espaço disponível */
+}
+
+.about-title{
+    font-size: 40px;
+    margin-left: 20px;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #00D9B2;
+}
+
+.about-p{
+    line-height: 22px;
+    font-size: 18px;
+    color: #bdbdbd;
+    margin: 15px;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.about-title::selection{
+    background-color: #00D9B2;
+    color: #1f1f1f;
+}
+
+.about-p::selection{
+    background-color: #00D9B2; 
+    color: #151515;
+}
+
+.about-button{
+    margin-left: 20px;
+    font-family: "Inria Sans", sans-serif;
+    border: none !important;
+    color:#f5f5f5;
+    background-color: transparent !important;;
+    font-weight: 100px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+/*---------------- aboute me----------------*/
+
+
+/*------------------ div flutuante ----------------*/
+
+.modal {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 300;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+   
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* fundo semi-transparente */
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease; /* Efeito de transição */
+    box-shadow: 0px 0px 20px #00d9b1c2;
+}
+
+.modal.show {
+    display: block; /* Torna visível quando a classe 'show' é adicionada */
+    opacity: 1; /* Torna totalmente visível */
+    
+}
+
+
+.modal-content {
+    text-align: justify;
+    background-color: #1b1b1b;
+    color: #00D9B2;
+    margin: 10% auto; /* Remova o valor superior para centralizar verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 400px; /* Altere a altura para automático para que ela se ajuste ao conteúdo */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    justify-content: center; /* Alinhe verticalmente os elementos */
+    align-items: center; /* Alinhe horizontalmente os elementos */
+    position: relative; /* Permitir o posicionamento absoluto do ícone de fechar */
+    box-shadow: 0px 0px 13px rgba(14, 248, 155, 0.507);
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para o botão dentro da janela modal */
+.close {
+    position: absolute; /* Posicionamento absoluto */
+    top: 10px; /* Distância do topo */
+    right: 10px; /* Distância da direita */
+    cursor: pointer;
+    color: #00D9B2;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-content button {
+    
+    background-color: #00D9B2;
+    color: #fff;
+    
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Adicione um espaço acima do botão */
+}
+
+/* Estilo para o botão quando o mouse passa por cima */
+.modal-content button:hover {
+    background-color: #02a587; /* Cor de fundo alterada quando o mouse passa por cima */
+}
+
+p::selection {
+    background-color: #00D9B2;
+    color: #101010;
+}
+
+    
+
+.close:hover,
+.close:focus {
+    color: #02a587;
+    
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#img-contact{
+    height: 120px;
+    width: 120px;
+    border: #000000 3.5px solid;
+    background-color: #f5f5f500;
+    border-radius: 50%;
+}
+
+#icons{
+    width: 20px; /* Ajuste o tamanho conforme necessário */
+    height: 20px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 9px; /* Espaço à direita das imagens */
+}
+
+/*img programming about*/
+
+
+.programming-bro{
+    height: 400px;
+    width: 400px;
+    margin-left: 45rem ; /* Ajuste o valor conforme necessário para alinhar a imagem à direita do texto */
+    margin-top: -21.5rem; /* Ajuste o valor conforme necessário */
+    position: absolute; /* Ajuste o tamanho da imagem conforme necessário */
+}
+

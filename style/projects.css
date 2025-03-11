@@ -1,0 +1,192 @@
+/* Estilização da seção de projetos */
+#projects {
+    background-color: #111;
+    color: #fff;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: row; /* Organiza os elementos em linha */
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Título da seção */
+.projects-title {
+    font-size: 28px;
+    color: #00ffcc;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Subtítulo da seção */
+.projects-subtitle {
+    font-size: 16px;
+    color: #bbb;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Contêiner para título e subtítulo */
+.projects-header {
+    display: flex;
+    flex-direction: column; /* Alinha título e subtítulo verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Lista de categorias */
+.categories {
+    width: 250px; /* Mantém a largura fixa das categorias */
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    height: 400px; /* Definido para manter uma altura consistente */
+}
+
+.categories h2 {
+    color: #00ffcc;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.category-item {
+    padding: 14px;
+    cursor: pointer;
+    background: #333;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.category-item:hover, .category-item.active {
+    background: #00ffcc;
+    color: #111;
+}
+
+/* Container de projetos */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-grow: 1;
+    width: calc(100% - 250px); /* Ajusta o espaço disponível para os cards */
+}
+
+/* Cards de projetos */
+.project-card {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: none; /* Oculto por padrão */
+}
+
+.project-card.active {
+    display: block; /* Mostra apenas os filtrados */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 15px rgba(0, 255, 204, 0.5);
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    color: #00ffcc;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #bbb;
+    margin: 10px 0;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    color: #00ffcc;
+    border: 2px solid #00ffcc;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.project-link:hover {
+    background: #00ffcc;
+    color: #111;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #projects {
+        flex-direction: column; /* Muda para coluna em telas pequenas */
+        align-items: center;
+    }
+
+    .categories {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .projects-container {
+        width: 100%;
+    }
+}
+
+.project-tech {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.project-tech i {
+    font-size: 24px;
+    color: #fff;
+    background: #222;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Animação de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicando a animação nos cards */
+.project-card {
+    opacity: 0; /* Começa invisível */
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+/* Para aplicar um pequeno delay entre os cards */
+.project-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.project-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.project-card:nth-child(3) {
+    animation-delay: 0.5s;
+}
