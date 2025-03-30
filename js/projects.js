@@ -27,10 +27,10 @@ const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('active');
-            observer.unobserve(entry.target); // Stop observing after the card enters the view
+            observer.unobserve(entry.target);
         }
     });
-}, { threshold: 0.1 }); // Trigger when 10% of the card is in the view
+}, { threshold: 0.1 }); 
 
 cards.forEach(card => {
     observer.observe(card);
