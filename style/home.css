@@ -127,7 +127,7 @@ html{
 .img-profile {   
     position: relative;
     width: 333px;
-    height: 375px;
+    height: 335px;
     margin-right: 20px;
     pointer-events: none;
     margin-top: 1px;
@@ -146,7 +146,6 @@ p {
 }
 
 #home {
-    background: url("../img/lake_mountain_reflection_199486_3840x2160.jpg");
     width: 100%;
     margin: 0;
     justify-content: center;

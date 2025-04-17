@@ -1,4 +1,24 @@
-// Função para abrir a div flutuante
+const backgrounds = [
+    "../img/background/11019.jpg",
+    "../img/background/2432 (2).jpg",
+    "../img/background/lake_mountain_reflection_199486_3840x2160.jpg",
+    "../img/background/remix-de-lindo-fundo-de-lago-de-montanha.jpg",
+    "../img/background/wp2559996-n-wallpaper-hd.jpg",
+    "../img/background/wp9014385-mountain-river-wallpapers.jpg"
+  ];
+
+  // Sorteia um índice aleatório
+  const randomIndex = Math.floor(Math.random() * backgrounds.length);
+  const selectedBackground = backgrounds[randomIndex];
+
+  // Aplica o background à section #home
+  window.addEventListener("load", () => {
+    const homeSection = document.getElementById("home");
+    homeSection.style.backgroundImage = `url('${selectedBackground}')`;
+    homeSection.style.backgroundSize = "cover";
+    homeSection.style.backgroundPosition = "center";
+    homeSection.style.backgroundRepeat = "no-repeat";
+  });
 function openModal() {
     document.getElementById("myModal").style.display = "block";
     setTimeout(function() {
@@ -141,21 +161,7 @@ function toggleEditMode() {
 }
 
 
+
+
 ////////////////////////////////////////////////////////////
-
-// Seleciona o botão e o parágrafo adicional
-const button = document.getElementById('about-button');
-const mostrar = document.getElementById('mostrar');
-
-// Adiciona um ouvinte de evento para o botão
-button.addEventListener('click', function() {
-    // Alterna a visibilidade do texto extra
-    if (mostrar.style.display === 'none') {
-        mostrar.style.display = 'block'; // Exibe o texto
-        button.textContent = '← ler menos'; // Altera o texto do botão
-    } else {
-        mostrar.style.display = 'none'; // Esconde o texto
-        button.textContent = '→ ler mais'; // Restaura o texto original do botão
-    }
-});
 
