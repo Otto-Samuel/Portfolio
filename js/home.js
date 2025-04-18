@@ -165,3 +165,18 @@ function toggleEditMode() {
 
 ////////////////////////////////////////////////////////////
 
+// Seleciona o botão e o parágrafo adicional
+const button = document.getElementById('about-button');
+const mostrar = document.getElementById('mostrar');
+
+// Adiciona um ouvinte de evento para o botão
+button.addEventListener('click', function() {
+    // Alterna a visibilidade do texto extra
+    if (mostrar.style.display === 'none') {
+        mostrar.style.display = 'block'; // Exibe o texto
+        button.textContent = '← ler menos'; // Altera o texto do botão
+    } else {
+        mostrar.style.display = 'none'; // Esconde o texto
+        button.textContent = '→ ler mais'; // Restaura o texto original do botão
+    }
+});
