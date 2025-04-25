@@ -9,6 +9,7 @@
 
 Aqui estão alguns dos meus projetos mais recentes:
 
+
 ### 📍 Projeto 1
 
 Descrição breve do projeto 1.
