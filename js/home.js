@@ -71,7 +71,7 @@ github.addEventListener('click', function() {
 
 instagram.addEventListener('click', function() {
     
-    window.location.href = 'https://www.instagram.com/otto_samuel_/';
+    window.location.href = 'https://www.instagram.com/otto_s4muel/';
 });
 
 linkedin.addEventListener('click', function() {
