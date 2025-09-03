@@ -1,9 +1,9 @@
 const backgrounds = [
-    "../img/background/2432 (2).jpg",
-    "../img/background/abstract-1920x1080-cube-pattern-hd-15514.jpg",
-    "../img/background/wp2559996-n-wallpaper-hd.jpg",
-    "../img/background/bj1hg05g80241.jpg",
-    "../img/background/wp9014385-mountain-river-wallpapers.jpg"
+    "/img/background/2432 (2).jpg",
+    "/img/background/abstract-1920x1080-cube-pattern-hd-15514.jpg",
+    "/img/background/wp2559996-n-wallpaper-hd.jpg",
+    "/img/background/bj1hg05g80241.jpg",
+    "/img/background/wp9014385-mountain-river-wallpapers.jpg"
   ];
 
   const randomIndex = Math.floor(Math.random() * backgrounds.length);
