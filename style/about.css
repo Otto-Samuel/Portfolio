@@ -8,21 +8,21 @@
 #linha2{
     height: 0.1px;
     width: 100%;
-    margin-top: -11rem;
+    margin-top: -11em;
     background-color: #9c9c9c89;
 }
 
 #linha3{
     height: 0.1px;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 100px auto;
     background-color: #9c9c9c89;
 }
 
 #linha4{
     height: 0.1px;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 100px auto;
     background-color: #9c9c9c89;
 }
 
@@ -35,7 +35,7 @@
     margin-left: 200px;
     margin-top: 7%;
     text-align: justify;
-    margin-bottom: 90px;
+    margin-bottom: 90px auto;
     align-items: center;
     height: 75vh;
     flex-direction: row-reverse; /* Inverte a ordem dos itens na linha */
@@ -122,7 +122,7 @@
     text-align: justify;
     background-color: #1b1b1b;
     color: #00D9B2;
-    margin: 10% auto; /* Remova o valor superior para centralizar verticalmente */
+    margin: 8% auto; /* Remova o valor superior para centralizar verticalmente */
     padding: 20px;
     border: 1px solid #888;
     width: 30%;
@@ -194,9 +194,9 @@ p::selection {
 }
 
 #icons{
-    width: 20px; /* Ajuste o tamanho conforme necessário */
-    height: 20px; /* Ajuste o tamanho conforme necessário */
-    margin-right: 9px; /* Espaço à direita das imagens */
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
 }
 
 /*img programming about*/
@@ -205,8 +205,8 @@ p::selection {
 .programming-bro{
     height: 400px;
     width: 400px;
-    margin-left: 45rem ; /* Ajuste o valor conforme necessário para alinhar a imagem à direita do texto */
-    margin-top: -21.5rem; /* Ajuste o valor conforme necessário */
-    position: absolute; /* Ajuste o tamanho da imagem conforme necessário */
+    margin-left: 45rem ;
+    margin-top: -21.5rem; 
+    position: absolute; 
 }
 

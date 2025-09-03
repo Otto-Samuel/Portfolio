@@ -1,17 +1,14 @@
 const backgrounds = [
-    "../img/background/11019.jpg",
     "../img/background/2432 (2).jpg",
-    "../img/background/lake_mountain_reflection_199486_3840x2160.jpg",
-    "../img/background/remix-de-lindo-fundo-de-lago-de-montanha.jpg",
+    "../img/background/abstract-1920x1080-cube-pattern-hd-15514.jpg",
     "../img/background/wp2559996-n-wallpaper-hd.jpg",
+    "../img/background/bj1hg05g80241.jpg",
     "../img/background/wp9014385-mountain-river-wallpapers.jpg"
   ];
 
-  // Sorteia um índice aleatório
   const randomIndex = Math.floor(Math.random() * backgrounds.length);
   const selectedBackground = backgrounds[randomIndex];
 
-  // Aplica o background à section #home
   window.addEventListener("load", () => {
     const homeSection = document.getElementById("home");
     homeSection.style.backgroundImage = `url('${selectedBackground}')`;
@@ -23,15 +20,15 @@ function openModal() {
     document.getElementById("myModal").style.display = "block";
     setTimeout(function() {
         document.getElementById("myModal").classList.add("show");
-    }, 50); // Adiciona um pequeno atraso para garantir que a transição ocorra
+    }, 50);
 }
 
-// Função para fechar a div flutuante
+
 function closeModal() {
     document.getElementById("myModal").classList.remove("show");
     setTimeout(function() {
         document.getElementById("myModal").style.display = "none";
-    }, 300); // Aguarda o término da transição antes de ocultar completamente
+    }, 300);
 }
 
 
@@ -60,18 +57,18 @@ function showText1(el1, text1, interval1) {
 
 // Seleciona a github pelo ID
 var github = document.getElementById('github_ottosamuel');
-var instagram = document.getElementById('instagram_ottosamuel');
+var email = document.getElementById('email_ottosamuel');
 var linkedin = document.getElementById('linkedin_ottosamuel');
-var facebook = document.getElementById('facebook_ottosamuel');
+var stackover = document.getElementById('stack_ottosamuel');
 
 github.addEventListener('click', function() {
     
     window.location.href = 'https://github.com/Otto-Samuel';
 });
 
-instagram.addEventListener('click', function() {
+email.addEventListener('click', function() {
     
-    window.location.href = 'https://www.instagram.com/otto_s4muel/';
+    window.location.href = 'mailto:ottos565@gmail.com';
 });
 
 linkedin.addEventListener('click', function() {
@@ -79,9 +76,9 @@ linkedin.addEventListener('click', function() {
     window.location.href = 'https://www.linkedin.com/in/otto-samuel-597826187/';
 });
 
-facebook.addEventListener('click', function() {
+stackover.addEventListener('click', function() {
     
-    window.location.href = 'https://www.facebook.com/profile.php?id=100092335128107';
+    window.location.href = 'https://stackoverflow.com/users/31031680/otto-samuel';
 });
 
 
@@ -89,7 +86,7 @@ facebook.addEventListener('click', function() {
 // Função para alternar entre "Data Science" e "Computer Science" em loop
 function alternarPalavras() {
     const courseElement = document.getElementById('course');
-    const palavras = ['Analista de dados', 'dev backend'];
+    const palavras = ['Analista de dados', 'desenvolvedor backend'];
     let indice = 0;
     
     setInterval(() => {
@@ -111,50 +108,12 @@ alternarPalavras();
 // Função para abrir a div flutuante quando o scroll atingir uma determinada posição
 
 // Função para definir se o usuário é um administrador após o login bem-sucedido
+/*
 function setAdminStatus(isAdmin) {
     localStorage.setItem('isAdmin', isAdmin ? 'true' : 'false');
 }
-
+*/
 // Função para verificar se o usuário é um administrador e permitir o modo de edição
-function toggleEditMode() {
-    // Verifica se o usuário está autenticado como administrador
-    var isAdmin = localStorage.getItem('isAdmin');
-
-    // Se o usuário não estiver autenticado como administrador, oculta o botão de edição
-    if (isAdmin !== 'true') {
-        var button = document.getElementById('editButton');
-        button.style.display = 'none';
-        return; // Retorna para evitar a execução do restante da função
-    }
-
-    // Se o usuário estiver autenticado como administrador, permite o modo de edição
-    var button = document.getElementById('editButton');
-    var textElements = document.querySelectorAll('h1, h2, h3, h4, h5, h6, p, span, a, button, li');
-
-    if (button.classList.contains('editing')) {
-        // Sai do modo de edição
-        textElements.forEach(function(element) {
-            element.contentEditable = false;
-            element.classList.remove('editable');
-            localStorage.removeItem(element.id); // Remove o texto do armazenamento local
-        });
-        button.classList.remove('editing');
-        button.style.backgroundColor = '#007bff'; // Cor inicial
-    } else {
-        // Entra no modo de edição
-        textElements.forEach(function(element) {
-            element.contentEditable = true;
-            element.classList.add('editable');
-            // Carrega o texto salvo do armazenamento local
-            var savedText = localStorage.getItem(element.id);
-            if (savedText) {
-                element.innerText = savedText;
-            }
-        });
-        button.classList.add('editing');
-        button.style.backgroundColor = '#555'; // Cor quando em modo de edição
-    }
-}
 
 
 
