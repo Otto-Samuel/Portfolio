@@ -83,28 +83,24 @@ facebook.addEventListener('click', function() {
     
     window.location.href = 'https://www.facebook.com/profile.php?id=100092335128107';
 });
-///////////
+
 
 
 // Função para alternar entre "Data Science" e "Computer Science" em loop
 function alternarPalavras() {
-    var courseElement = document.getElementById('course');
-    courseElement.style.opacity = 0;
-    setTimeout(function() {
-        courseElement.textContent = 'Cientista de dados';
-        courseElement.style.opacity = 1;
-        setTimeout(function() {
-            courseElement.style.opacity = 0;
-            setTimeout(function() {
-                courseElement.textContent = 'Cientista da computação';
-                courseElement.style.opacity = 1;
-                // Chama a função novamente após a transição terminar
-                setTimeout(alternarPalavras, 2000); // Espera 1 segundo antes de começar a transição novamente
-            }, 2000); // Tempo de espera antes de mostrar "Computer Science"
-        }, 2000); // Tempo de espera antes de desaparecer "Data Science"
-    }, 2000); // Tempo de espera antes de mostrar "Data Science"
+    const courseElement = document.getElementById('course');
+    const palavras = ['Analista de dados', 'dev backend'];
+    let indice = 0;
+    
+    setInterval(() => {
+        courseElement.style.opacity = 0;
+        setTimeout(() => {
+            courseElement.textContent = palavras[indice];
+            courseElement.style.opacity = 1;
+            indice = (indice + 1) % palavras.length;
+        }, 800);
+    }, 3000);
 }
-
 // Iniciar o loop de transição inicialmente
 showText1(el1, text1, interval1);
 

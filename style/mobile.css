@@ -1,0 +1,318 @@
+/* ===== ESTILOS GERAIS PARA MOBILE ===== */
+@media (max-width: 767px) {
+  /* Reset de margens e paddings */
+  body, html {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ===== HEADER/Navbar ===== */
+  .mobile-menu-btn {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  #parte-cima {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    background: #fff;
+    transition: all 0.3s;
+    z-index: 999;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+
+  #parte-cima.active {
+    left: 0;
+  }
+
+  .botoes-esquerdo {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .botao {
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .botao-direito {
+    width: 100%;
+  }
+
+  #contact {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* ===== SEÇÃO PRINCIPAL ===== */
+
+  
+  .principal {
+    flex-direction: column;
+    padding: 20px 15px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .img-profile {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+  }
+
+  .home_title {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .home_title-color {
+    display: inline-block;
+    font-size: 2rem;
+    margin: 5px 0;
+    color: #2c3e50; /* Cor que contrasta bem */
+    font-weight: 700;
+  }
+
+#course {
+    display: block;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #7f8c8d;
+    font-weight: 400;
+  } 
+
+  .home-more {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 15px 0;
+    color: #34495e;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .img-logo {
+    width: 36px;
+    height: 36px;
+    margin: 0 8px;
+    transition: transform 0.3s;
+  }
+
+  .img-logo:hover {
+    transform: scale(1.1);
+  }
+
+  /* ===== SOBRE MIM ===== */
+  .about-me {
+    padding: 15px;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .about-p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .about-button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    margin: 15px 0;
+  }
+
+  .programming-bro {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 15px auto 0;
+  }
+
+  /* ===== SKILLS ===== */
+  .skills-title {
+    font-size: 1.5rem;
+    margin: 15px 0 5px;
+  }
+
+  .skills-subtitulo {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .container-skills {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .box-skills1, .box-skills2, 
+  .box-skills3, .box-skills4,
+  .box-skills5, .box-skills6,
+  .box-skills7, .box-skills8,
+  .box-skills9, .box-skills10 {
+    padding: 10px;
+  }
+
+  #skill-h3 {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+
+  .skills-img img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* ===== PROJETOS ===== */
+  .categories {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .category-item {
+    padding: 8px;
+    font-size: 0.9rem;
+    margin: 3px 0;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .project-image {
+    height: 150px;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+  }
+
+  .project-description {
+    font-size: 0.8rem;
+  }
+
+  .project-tech i {
+    font-size: 1.2rem;
+    margin: 0 5px;
+  }
+
+  .project-link {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  /* ===== SERVIÇOS ===== */
+  .services-header {
+    padding: 15px 10px;
+  }
+
+  .services-title {
+    font-size: 1.5rem;
+  }
+
+  .services-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .service-card {
+    padding: 15px;
+  }
+
+  .service-title {
+    font-size: 1.1rem;
+  }
+
+  .service-description {
+    font-size: 0.9rem;
+  }
+
+  /* ===== MODAL DE CONTATO ===== */
+  .modal-content {
+    width: 90%;
+    padding: 15px;
+  }
+
+  #img-contact {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .modal-content p {
+    font-size: 0.9rem;
+    margin: 8px 0;
+  }
+
+  .modal-content button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  /* ===== SCROLL ICON ===== */
+  .scroll-icon {
+    margin: 10px auto;
+    transform: scale(0.8);
+  }
+}
+
+/* ===== AJUSTES ESPECÍFICOS PARA IPHONE ===== */
+@media only screen and (max-width: 375px) {
+  .botoes-esquerdo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .botao {
+    font-size: 11px;
+    padding: 6px 3px;
+  }
+
+  .home_title {
+    font-size: 1.3rem;
+  }
+
+  .container-skills {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== ORIENTAÇÃO LANDSCAPE ===== */
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  .botoes-esquerdo {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .container-skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

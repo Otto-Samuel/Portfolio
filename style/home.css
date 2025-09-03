@@ -303,42 +303,7 @@ p {
 
 }
 
-@media (max-width: 768px) {
-  #parte-cima {
-    flex-direction: column;
-    padding: 10px;
-  }
-  
-  .botoes-esquerdo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
-    margin-bottom: 10px;
-  }
-  
-  .botao {
-    padding: 6px 10px;
-    font-size: 14px;
-  }
-  
-  #contact {
-    width: 100%;
-    margin-top: 10px;
-  }
-}
 
-@media (max-width: 768px) {
-  .container-skills {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .container-skills {
-    grid-template-columns: 1fr;
-  }
-}
   
 
 
