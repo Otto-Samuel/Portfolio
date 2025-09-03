@@ -28,18 +28,26 @@
 
 /*---------------- aboute me----------------*/
 .about-me{
-  
     justify-content: center;
     background-color: transparent;
     width: 600px;
     margin-left: 200px;
     margin-top: 7%;
     text-align: justify;
-    margin-bottom: 90px auto;
+    margin-bottom: 150px;
     align-items: center;
     height: 75vh;
-    flex-direction: row-reverse; /* Inverte a ordem dos itens na linha */
-    
+    flex-direction: row-reverse;
+    max-width: 90%;
+}
+
+@media (max-width: 768px) {
+    .about-me {
+        width: 95% !important;
+        margin: 20px auto !important;
+        height: auto !important;
+        flex-direction: column;
+    }
 }
 
 .about-me {
@@ -205,8 +213,18 @@ p::selection {
 .programming-bro{
     height: 400px;
     width: 400px;
-    margin-left: 45rem ;
-    margin-top: -21.5rem; 
-    position: absolute; 
+    margin-left: 45rem;
+    margin-top: -21.5rem;
+    position: absolute;
+}
+
+@media (max-width: 768px) {
+    .programming-bro {
+        position: static !important;
+        width: 100% !important;
+        max-width: 300px !important;
+        height: auto !important;
+        margin: 15px auto 0 !important;
+    }
 }
 

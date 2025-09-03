@@ -32,12 +32,28 @@
 .container-skills {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Alinhar as caixas de habilidades ao centro horizontalmente */
-    max-width: 1800px; /* Definir a largura máxima para o container */
-    margin: 0 auto; /* Centralizar o container na página */
+    justify-content: center;
+    max-width: 1800px;
+    margin: 0 auto;
     box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.393);
     cursor: pointer;
     margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .container-skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-skills {
+        grid-template-columns: 1fr;
+    }
 }
 
 .box-skills1 {
