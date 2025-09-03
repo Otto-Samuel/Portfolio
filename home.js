@@ -1,9 +1,9 @@
 const backgrounds = [
-    "/img/background/2432 (2).jpg",
-    "/img/background/abstract-1920x1080-cube-pattern-hd-15514.jpg",
-    "/img/background/wp2559996-n-wallpaper-hd.jpg",
-    "/img/background/bj1hg05g80241.jpg",
-    "/img/background/wp9014385-mountain-river-wallpapers.jpg"
+    "assents/img/background/2432 (2).jpg",
+    "assents/img/background/abstract-1920x1080-cube-pattern-hd-15514.jpg",
+    "assents/img/background/wp2559996-n-wallpaper-hd.jpg",
+    "assents/img/background/bj1hg05g80241.jpg",
+    "assents/img/background/wp9014385-mountain-river-wallpapers.jpg"
   ];
 
   const randomIndex = Math.floor(Math.random() * backgrounds.length);
@@ -36,7 +36,7 @@ function closeModal() {
 
 const el1 = document.querySelector("#welcome");
 const text1 = "Bem-vindo ao site oficial do portfólio, onde você pode explorar minha jornada profissional, projetos, habilidades e realizações, fornecendo insights sobre minha experiência e capacidades." ;
-const interval1 = 40;
+const interval1 = 30;
 
 function showText1(el1, text1, interval1) {
     const char = text1.split("").reverse();
