@@ -1,9 +1,4 @@
 {
-  "root": "html",
-  "cleanUrls": true,
-  "headers": {
-    "/**": {
-      "Cache-Control": "public, max-age=0, must-revalidate"
-    }
-  }
+  "root": ".",
+  "cleanUrls": true
 }
