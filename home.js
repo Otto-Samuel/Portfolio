@@ -15,6 +15,9 @@ window.addEventListener("load", () => {
   homeSection.style.backgroundSize = "cover";
   homeSection.style.backgroundPosition = "center";
   homeSection.style.backgroundRepeat = "no-repeat";
+  homeSection.style.borderRadius = "0 0 50px 50px";
+  //homeSection.style.width = "100%";
+
 });
 function openModal() {
   document.getElementById("myModal").style.display = "block";

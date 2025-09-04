@@ -162,6 +162,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     margin-top: -70px;
+    border-radius: 20px 20px 0px 0px;
     padding-top: 7%;
     height: 100%; /* Change to 100% or a larger value if necessary */
     background-size: cover; /* Scale the background image to cover the entire container */

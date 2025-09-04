@@ -80,10 +80,11 @@ p {
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(6, 1fr); /* 6 colunas */
   gap: 20px;
   width: 100%;
   max-width: 1000px;
+  justify-content: center; /* centraliza os itens */
 }
 
 .skill-card img {
@@ -97,7 +98,7 @@ p {
 .skill-card {
   background: #1e1e1e;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 3px;
   text-align: center;
   width: 200px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -157,7 +158,7 @@ p {
 
 .skill-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(0, 255, 128, 0.4);
+  box-shadow: 0 0 10px #00ffaabd;
 }
 
 .skill-card:hover .progress {
