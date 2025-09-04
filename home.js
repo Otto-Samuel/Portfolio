@@ -112,20 +112,23 @@ TODO:                              { Area das Skills}
 *#########################################################################################
 */
 
-const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const progress = entry.target;
-          const value = progress.getAttribute('data-value');
-          progress.style.width = value;   // cresce até o valor
-          observer.unobserve(progress); // só uma vez
-        }
-      });
-    }, { threshold: 0.5 });
-
-    document.querySelectorAll('.progress').forEach(bar => {
-      observer.observe(bar);
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const progress = entry.target;
+        const value = progress.getAttribute("data-value");
+        progress.style.width = value; // cresce até o valor
+        observer.unobserve(progress); // só uma vez
+      }
     });
+  },
+  { threshold: 0.5 }
+);
+
+document.querySelectorAll(".progress").forEach((bar) => {
+  observer.observe(bar);
+});
 
 /*
 *#########################################################################################
