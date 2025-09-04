@@ -112,25 +112,20 @@ TODO:                              { Area das Skills}
 *#########################################################################################
 */
 
-// Intersection Observer para animar quando as barras entrarem na tela
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const progress = entry.target;
-        const value = progress.getAttribute("data-value");
-        progress.style.width = value;
-        progress.style.background = "#00cc88"; // muda para verde escuro
-        observer.unobserve(progress); // só anima uma vez
-      }
-    });
-  },
-  { threshold: 0.5 }
-);
+const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const progress = entry.target;
+          const value = progress.getAttribute('data-value');
+          progress.style.width = value;   // cresce até o valor
+          observer.unobserve(progress); // só uma vez
+        }
+      });
+    }, { threshold: 0.5 });
 
-document.querySelectorAll(".progress").forEach((bar) => {
-  observer.observe(bar);
-});
+    document.querySelectorAll('.progress').forEach(bar => {
+      observer.observe(bar);
+    });
 
 /*
 *#########################################################################################
