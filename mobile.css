@@ -1,7 +1,8 @@
 /* ===== ESTILOS GERAIS PARA MOBILE ===== */
 @media (max-width: 767px) {
   /* Reset de margens e paddings */
-  body, html {
+  body,
+  html {
     overflow-x: hidden;
     width: 100%;
     margin: 0;
@@ -18,7 +19,7 @@
     background: #fff;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 
   #parte-cima {
@@ -63,7 +64,6 @@
 
   /* ===== SEÇÃO PRINCIPAL ===== */
 
-  
   .principal {
     flex-direction: column;
     padding: 20px 15px;
@@ -99,13 +99,13 @@
     font-weight: 700;
   }
 
-#course {
+  #course {
     display: block;
     font-size: 1.2rem;
     margin: 10px 0;
     color: #7f8c8d;
     font-weight: 400;
-  } 
+  }
 
   .home-more {
     font-size: 1rem;
@@ -182,11 +182,16 @@
     padding: 10px;
   }
 
-  .box-skills1, .box-skills2, 
-  .box-skills3, .box-skills4,
-  .box-skills5, .box-skills6,
-  .box-skills7, .box-skills8,
-  .box-skills9, .box-skills10 {
+  .box-skills1,
+  .box-skills2,
+  .box-skills3,
+  .box-skills4,
+  .box-skills5,
+  .box-skills6,
+  .box-skills7,
+  .box-skills8,
+  .box-skills9,
+  .box-skills10 {
     padding: 10px;
   }
 

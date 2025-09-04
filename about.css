@@ -1,230 +1,221 @@
-#linha1{
-    height: 0.1px;
-    width: 100%;
-    margin-top: 5px;
-    background-color: #9c9c9c89;
+#linha1 {
+  height: 0.1px;
+  width: 100%;
+  margin-top: 5px;
+  background-color: #9c9c9c89;
 }
 
-#linha2{
-    height: 0.1px;
-    width: 100%;
-    margin-top: -16em;
-    background-color: #9c9c9c89;
+#linha2 {
+  height: 0.1px;
+  width: 100%;
+  margin-top: -16em;
+  background-color: #9c9c9c89;
 }
 
-#linha3{
-    height: 0.1px;
-    width: 100%;
-    margin-top: 100px auto;
-    background-color: #9c9c9c89;
+#linha3 {
+  height: 0.1px;
+  width: 100%;
+  margin-top: 100px auto;
+  background-color: #9c9c9c89;
 }
 
-#linha4{
-    height: 0.1px;
-    width: 100%;
-    margin-top: 100px auto;
-    background-color: #9c9c9c89;
+#linha4 {
+  height: 0.1px;
+  width: 100%;
+  margin-top: 100px auto;
+  background-color: #9c9c9c89;
 }
 
 /*---------------- aboute me----------------*/
-.about-me{
-    justify-content: center;
-    background-color: transparent;
-    width: 600px;
-    margin-left: 200px;
-    margin-top: 7%;
-    text-align: justify;
-    margin-bottom: 150px;
-    align-items: center;
-    height: 75vh;
-    flex-direction: row-reverse;
-    max-width: 90%;
+.about-me {
+  justify-content: center;
+  background-color: transparent;
+  width: 600px;
+  margin-left: 200px;
+  margin-top: 7%;
+  text-align: justify;
+  margin-bottom: 150px;
+  align-items: center;
+  height: 75vh;
+  flex-direction: row-reverse;
+  max-width: 90%;
 }
 
 @media (max-width: 768px) {
-    .about-me {
-        width: 95% !important;
-        margin: 20px auto !important;
-        height: auto !important;
-        flex-direction: column;
-    }
+  .about-me {
+    width: 95% !important;
+    margin: 20px auto !important;
+    height: auto !important;
+    flex-direction: column;
+  }
 }
 
 .about-me {
-    position: relative;
+  position: relative;
 }
 
 .about-me .about-p {
-    flex: 1; /* Faz o texto ocupar todo o espaço disponível */
+  flex: 1; /* Faz o texto ocupar todo o espaço disponível */
 }
 
-.about-title{
-    font-size: 40px;
-    margin-left: 20px;
-    font-family: "Noto Sans JP", sans-serif;
-    color: #00D9B2;
+.about-title {
+  font-size: 40px;
+  margin-left: 20px;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #00d9b2;
 }
 
-.about-p{
-    line-height: 22px;
-    font-size: 18px;
-    color: #bdbdbd;
-    margin: 15px;
-    font-family: "Noto Sans JP", sans-serif;
+.about-p {
+  line-height: 22px;
+  font-size: 18px;
+  color: #bdbdbd;
+  margin: 15px;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
-.about-title::selection{
-    background-color: #00D9B2;
-    color: #1f1f1f;
+.about-title::selection {
+  background-color: #00d9b2;
+  color: #1f1f1f;
 }
 
-.about-p::selection{
-    background-color: #00D9B2; 
-    color: #151515;
+.about-p::selection {
+  background-color: #00d9b2;
+  color: #151515;
 }
 
-.about-button{
-    margin-left: 20px;
-    font-family: "Inria Sans", sans-serif;
-    border: none !important;
-    color:#f5f5f5;
-    background-color: transparent !important;;
-    font-weight: 100px;
-    font-size: 16px;
-    margin: 10px;
-    cursor: pointer;
+.about-button {
+  margin-left: 20px;
+  font-family: "Inria Sans", sans-serif;
+  border: none !important;
+  color: #f5f5f5;
+  background-color: transparent !important;
+  font-weight: 100px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
 }
-
 
 /*---------------- aboute me----------------*/
-
 
 /*------------------ div flutuante ----------------*/
 
 .modal {
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 300;
-    display: none;
-    position: fixed;
-    z-index: 9999;
-   
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5); /* fundo semi-transparente */
-    opacity: 0; /* Inicialmente invisível */
-    transition: opacity 0.3s ease; /* Efeito de transição */
-    box-shadow: 0px 0px 20px #00d9b1c2;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
+  display: none;
+  position: fixed;
+  z-index: 9999;
+
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* fundo semi-transparente */
+  opacity: 0; /* Inicialmente invisível */
+  transition: opacity 0.3s ease; /* Efeito de transição */
+  box-shadow: 0px 0px 20px #00d9b1c2;
 }
 
 .modal.show {
-    display: block; /* Torna visível quando a classe 'show' é adicionada */
-    opacity: 1; /* Torna totalmente visível */
-    
+  display: block; /* Torna visível quando a classe 'show' é adicionada */
+  opacity: 1; /* Torna totalmente visível */
 }
 
-
 .modal-content {
-    text-align: justify;
-    background-color: #1b1b1b;
-    color: #00D9B2;
-    margin: 8% auto; /* Remova o valor superior para centralizar verticalmente */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 30%;
-    height: 400px; /* Altere a altura para automático para que ela se ajuste ao conteúdo */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    justify-content: center; /* Alinhe verticalmente os elementos */
-    align-items: center; /* Alinhe horizontalmente os elementos */
-    position: relative; /* Permitir o posicionamento absoluto do ícone de fechar */
-    box-shadow: 0px 0px 13px rgba(14, 248, 155, 0.507);
-    font-family: "Inria Sans", sans-serif;
-    font-weight: 400;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza os elementos horizontalmente */
-    text-align: center; /* Centraliza o texto */
+  text-align: justify;
+  background-color: #1b1b1b;
+  color: #00d9b2;
+  margin: 8% auto; /* Remova o valor superior para centralizar verticalmente */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  height: 400px; /* Altere a altura para automático para que ela se ajuste ao conteúdo */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  justify-content: center; /* Alinhe verticalmente os elementos */
+  align-items: center; /* Alinhe horizontalmente os elementos */
+  position: relative; /* Permitir o posicionamento absoluto do ícone de fechar */
+  box-shadow: 0px 0px 13px rgba(14, 248, 155, 0.507);
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os elementos horizontalmente */
+  text-align: center; /* Centraliza o texto */
 }
 
 /* Estilo para o botão dentro da janela modal */
 .close {
-    position: absolute; /* Posicionamento absoluto */
-    top: 10px; /* Distância do topo */
-    right: 10px; /* Distância da direita */
-    cursor: pointer;
-    color: #00D9B2;
-    font-size: 28px;
-    font-weight: bold;
+  position: absolute; /* Posicionamento absoluto */
+  top: 10px; /* Distância do topo */
+  right: 10px; /* Distância da direita */
+  cursor: pointer;
+  color: #00d9b2;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .modal-content button {
-    
-    background-color: #00D9B2;
-    color: #fff;
-    
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 20px; /* Adicione um espaço acima do botão */
+  background-color: #00d9b2;
+  color: #fff;
+
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Adicione um espaço acima do botão */
 }
 
 /* Estilo para o botão quando o mouse passa por cima */
 .modal-content button:hover {
-    background-color: #02a587; /* Cor de fundo alterada quando o mouse passa por cima */
+  background-color: #02a587; /* Cor de fundo alterada quando o mouse passa por cima */
 }
 
 p::selection {
-    background-color: #00D9B2;
-    color: #101010;
+  background-color: #00d9b2;
+  color: #101010;
 }
-
-    
 
 .close:hover,
 .close:focus {
-    color: #02a587;
-    
-    text-decoration: none;
-    cursor: pointer;
+  color: #02a587;
+
+  text-decoration: none;
+  cursor: pointer;
 }
 
-#img-contact{
-    height: 120px;
-    width: 120px;
-    border: #000000 3.5px solid;
-    background-color: #f5f5f500;
-    border-radius: 50%;
+#img-contact {
+  height: 120px;
+  width: 120px;
+  border: #000000 3.5px solid;
+  background-color: #f5f5f500;
+  border-radius: 50%;
 }
 
-#icons{
-    width: 20px;
-    height: 20px;
-    margin-right: 9px;
+#icons {
+  width: 20px;
+  height: 20px;
+  margin-right: 9px;
 }
 
 /*img programming about*/
 
-
-.programming-bro{
-    height: 400px;
-    width: 400px;
-    margin-left: 45rem;
-    margin-top: -21.5rem;
-    position: absolute;
+.programming-bro {
+  height: 400px;
+  width: 400px;
+  margin-left: 45rem;
+  margin-top: -21.5rem;
+  position: absolute;
 }
 
 @media (max-width: 768px) {
-    .programming-bro {
-        position: static !important;
-        width: 100% !important;
-        max-width: 300px !important;
-        height: auto !important;
-        margin: 15px auto 0 !important;
-    }
+  .programming-bro {
+    position: static !important;
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    margin: 15px auto 0 !important;
+  }
 }
-
