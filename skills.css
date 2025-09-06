@@ -103,6 +103,7 @@ p {
   width: 200px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-left: -10px;
+  margin-bottom: -10px;
 }
 
 .icon-wrapper {

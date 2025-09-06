@@ -1,5 +1,6 @@
 const backgrounds = [
-  "assents/img/background/2432 (2).jpg",
+  "assents/img/background/xuTJZ7uD7PI.jpeg",
+  "assents/img/background/XYrjl3j7smo.jpeg",
   "assents/img/background/abstract-1920x1080-cube-pattern-hd-15514.jpg",
   "assents/img/background/wp2559996-n-wallpaper-hd.jpg",
   "assents/img/background/bj1hg05g80241.jpg",
