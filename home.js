@@ -155,3 +155,12 @@ button.addEventListener("click", function () {
     button.textContent = "→ ler mais"; // Restaura o texto original do botão
   }
 });
+
+
+/*
+========================================================
+*/
+
+function certificado(){
+  window.location.href = "./certificado.html";
+}

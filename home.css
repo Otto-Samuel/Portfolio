@@ -91,7 +91,7 @@ html {
   margin: 30px;
   margin-top: 7%;
   color: #0c0c0c;
-  font-size: 22px;
+  font-size: 20px;
   border: none;
   border-radius: 0.25px;
   background-color: #1dddbc;
@@ -101,7 +101,7 @@ html {
   margin-left: auto;
   height: 42px;
   width: 120px;
-  margin-right: 13rem;
+  margin-right: 1rem;
   transition: box-shadow 0.3s ease;
   user-select: none;
 }
@@ -112,12 +112,44 @@ html {
     width: 100px !important;
     font-size: 18px !important;
   }
+
+  #certificado {
+    margin-right: 10px !important;
+    width: 100px !important;
+    font-size: 18px !important;
+  }
 }
 
 #contact:hover {
   background-color: #98fdd5;
   box-shadow: 0px 0px 20px rgba(46, 229, 157, 0.4);
   color: #151515;
+}
+
+#certificado:hover{
+  background-color: #232323;
+  box-shadow: 0px 0px 20px rgba(211, 211, 211, 0.4);
+  color: #e4e4e4;
+  transition: filter 0.5s ease;
+}
+
+#certificado {
+  margin-top: 7%;
+  color: #0c0c0c;
+  font-size: 20px;
+  border: none;
+  border-radius: 0.25px;
+  background-color: #ededed;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  margin-left: 5px;
+  border-radius: 3px;
+  height: 42px;
+  width: 120px;
+  margin-right: 3rem;
+  transition: box-shadow 0.3s ease;
+  user-select: none;
 }
 
 .principal {
