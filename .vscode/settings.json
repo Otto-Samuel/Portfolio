@@ -1,5 +1,7 @@
 {
     "liveServer.settings.port": 5501,
     "liveServer.settings.multiRootWorkspaceName": "portfolio",
-    "discord.enabled": true
+    "discord.enabled": true,
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python-envs.pythonProjects": []
 }
