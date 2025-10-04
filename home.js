@@ -162,5 +162,5 @@ button.addEventListener("click", function () {
 */
 
 function certificado(){
-  window.location.href = "./certificado.html";
+  window.location.href = "./PaginaCertificados.html";
 }
