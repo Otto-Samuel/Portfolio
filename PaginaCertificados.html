@@ -1,44 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificados</title>
     <link rel="stylesheet" href="certificados.css">
     <link rel="shortcut icon" href="assents/Pagecertificados/icons8-diploma-32.png" type="image/x-icon">
+
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Hind+Siliguri:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="background-container">
-        
-        <div>
-            <button class="button-voltar" onclick="voltar()">
-                <img src="./assents/Pagecertificados/back.png" alt="back" style="width:25px; height:25px;">
-                <span style="font-size:18px; margin:5px">Voltar</span>
-            </button>
-        </div>
+    <div class="background-container"></div>
 
-        <div class="txt-certificado">
-            <h1 id="certificados-title">Certificados</h>
-        </div>
+    <button class="button-voltar" onclick="voltar()">
+        <img src="./assents/Pagecertificados/back.png" alt="Voltar" width="25" height="25">
+        <span>Voltar</span>
+    </button>
 
-
-        <div class="instituicao">
-            <td>
-                <ul><Button class="btn-inst">Cesupa</Button></ul>
-                <ul><button class="btn-inst">Udemy</button></ul>
-                <ul><button class="btn-inst">Microlins</button></ul>
-                <ul><Button class="btn-inst">Alura</Button></ul>
-            </td>
-        </div>
-
-        
-        <div class="cartao-certificados">
-            
-        </div>
+    <div class="txt-certificado">
+        <h1 id="certificados-title">Certificados</h1>
     </div>
+
+    <div class="instituicao">
+        <ul>
+            <li><button class="btn-inst">Cesupa</button></li>
+            <li><button class="btn-inst">Udemy</button></li>
+            <li><button class="btn-inst">Microlins</button></li>
+            <li><button class="btn-inst">Alura</button></li>
+        </ul>
+    </div>
+
+    <div class="cartao-certificados"></div>
 
     <script src="Paginacertificados.js"></script>
 </body>
