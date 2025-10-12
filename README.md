@@ -1,4 +1,4 @@
-# 🚀 Portfolio - Otto Samuel
+![portfolio](https://capsule-render.vercel.app/api?type=rect&height=200&color=1DDDBC&text=Portfolio%20🚀&section=header&descAlign=59&strokeWidth=0&textBg=false)
 
 ## 📋 Sobre o Projeto
 
@@ -6,72 +6,16 @@ Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresent
 
 ## 🛠️ Tecnologias Utilizadas
 
-### Frontend
-- **React.js** - Biblioteca JavaScript para construção de interfaces
-- **HTML5** - Marcação semântica
-- **CSS3** - Estilização e animações
-- **JavaScript (ES6+)** - Lógica e interatividade
-
-### Backend
-- **Node.js** - Ambiente de execução JavaScript
-- **Express.js** - Framework web para Node.js
-
-### Ferramentas e Outros
-- **Git** - Controle de versão
-- **GitHub** - Hospedagem de código
-- **VS Code** - Editor de código
-- **npm** - Gerenciador de pacotes
-
-## 🚀 Como Rodar o Projeto Localmente
-
-### Pré-requisitos
-- Node.js (versão 14 ou superior)
-- npm ou yarn
-- Git
-
-### Passo a Passo
-
-1. Clone o repositório:
-```bash
-git clone https://github.com/Otto-Samuel/Portfolio.git
-```
-
-2. Entre na pasta do projeto:
-```bash
-cd Portfolio
-```
-
-3. Instale as dependências:
-```bash
-npm install
-# ou
-yarn install
-```
-
-4. Execute o projeto:
-```bash
-npm start
-# ou
-yarn start
-```
-
-5. Acesse no navegador:
-```
-http://localhost:3000
-```
+<p>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,js&perline=9"/>
+  </a>
+</p>
 
 ## 📂 Estrutura do Projeto
 
 ```
-Portfolio/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── assets/
-│   └── styles/
-├── public/
-├── package.json
-└── README.md
+
 ```
 
 ## ✨ Funcionalidades
@@ -88,16 +32,9 @@ Portfolio/
 Sinta-se à vontade para entrar em contato comigo:
 
 - **GitHub**: [@Otto-Samuel](https://github.com/Otto-Samuel)
-- **LinkedIn**: [Seu LinkedIn](https://linkedin.com/in/seu-perfil)
-- **Email**: seu.email@exemplo.com
-- **Portfolio**: [seu-portfolio.com](https://seu-portfolio.com)
-
-## 🔗 Links Úteis
-
-- [Documentação React](https://react.dev/)
-- [Documentação Node.js](https://nodejs.org/)
-- [GitHub Pages](https://pages.github.com/)
-- [Markdown Guide](https://www.markdownguide.org/)
+- **LinkedIn**: [otto-samuel](https://linkedin.com/in/otto-samuel)
+- **Email**: ottos565@gmail.com
+- **Portfolio**: [seu-portfolio.com](https://portfolio-ottosamuel.onrender.com)
 
 ## 📄 Licença
 
