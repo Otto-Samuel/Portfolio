@@ -60,20 +60,28 @@ body, html {
     font-size: 40px;
     margin-top: 25px;
   }
-  
-  /* Cartão principal */
   .cartao-certificados {
     position: absolute;
     right: 50px;
     top: 6pc;
-    background-color: rgba(12, 12, 12, 0.53);
+  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    justify-items: center;
+    align-items: start;
+  
     height: 600px;
     width: 1200px;
-    border-radius: 30px 30px 30px 0px;
-    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    padding: 20px;
+    box-sizing: border-box;
     overflow: auto;
+  
+    background-color: rgba(12, 12, 12, 0.53);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 30px 30px 30px 0px;
   }
   
   /* Lista de instituições */
@@ -151,18 +159,18 @@ body, html {
     align-items: center;
     gap: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
-    margin: 30px;
-}
+  }
 
-.cert-card:hover {
+  .cert-card:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 15px rgba(83, 83, 83, 0.3);
-}
-
-.cert-card img {
+    box-shadow: 0 0 15px rgba(0,230,230,0.3);
+  }
+  
+  .cert-card img {
     width: 100%;
     border-radius: 10px;
-}
+    cursor: pointer;
+  }
 
 .btn-zoom {
     background-color: #00e6c4;
@@ -191,4 +199,59 @@ body, html {
     border-radius: 10px;
 }
 
+/* ==================== 
+    Modal do PDF 
+======================= */
+
+.pdf-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .pdf-content {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    width: 55%;
+    height: 70%;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    animation: zoomIn 0.25s ease;
+  }
+  
+  @keyframes zoomIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  .pdf-content iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    font-size: 28px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .close-modal:hover {
+    color: #00e6e6;
+  }
   
