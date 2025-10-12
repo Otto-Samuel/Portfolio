@@ -20,10 +20,12 @@
         <span>Voltar</span>
     </button>
 
-    <div class="txt-certificado">
-        <h1 id="certificados-title">Certificados</h1>
+    <div class="top-nav">
+        <span class="nav-item active">CERTIFICADOS</span>
+        <span class="nav-divider">|</span>
+        <span class="nav-item">PARTICIPAÇÕES</span>
     </div>
-
+    
     <div class="instituicao">
         <ul>
             <li><button class="btn-inst">Cesupa</button></li>
@@ -33,7 +35,23 @@
         </ul>
     </div>
 
-    <div class="cartao-certificados"></div>
+    <div class="cartao-certificados">
+        <div class="cert-card">
+          <img src="certificados/udemy-java.png" alt="Certificado Java" class="cert-img" data-pdf="certificados/udemy-java.pdf">
+        </div>
+      
+        <div class="cert-card">
+          <img src="certificados/udemy-estruturas.png" alt="Estruturas de Dados" class="cert-img" data-pdf="certificados/udemy-estruturas.pdf">
+        </div>
+      </div>
+
+      <!-- Modal de visualização do PDF -->
+<div id="pdfModal" class="pdf-modal">
+    <div class="pdf-content">
+      <span class="close-modal">&times;</span>
+      <iframe id="pdfViewer" src="" frameborder="0"></iframe>
+    </div>
+  </div>
 
     <script src="Paginacertificados.js"></script>
 </body>
