@@ -127,19 +127,19 @@ html {
 }
 
 #certificado:hover{
-  background-color: #232323;
+  background-color: #212121;
   box-shadow: 0px 0px 20px rgba(211, 211, 211, 0.4);
-  color: #e4e4e4;
+  color: #dadada;
   transition: filter 0.5s ease;
 }
 
 #certificado {
   margin-top: 7%;
-  color: #0c0c0c;
+  color: #ffffff;
   font-size: 20px;
   border: none;
   border-radius: 0.25px;
-  background-color: #ededed;
+  background-color: #1b1b1b;
   font-family: "Inria Sans", sans-serif;
   font-weight: 400;
   cursor: pointer;
