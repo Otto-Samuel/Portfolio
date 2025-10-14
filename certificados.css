@@ -1,257 +1,268 @@
 /* Reset básico */
 body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-family: 'Inter', sans-serif;
-  }
-  
-  /* Fundo */
-  .background-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('gradient.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1;
-    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
-  }
-  
-  /* Botão Voltar */
-  .button-voltar {
-    background-color: transparent;
-    border: 2px solid #fff; 
-    color: #fff; 
-    border-radius: 50px; 
-    padding: 5px 15px; 
-    font-size: 16px; 
-    display: flex; 
-    align-items: center; 
-    gap: 8px; 
-    margin-left: 35px;
-    margin-top: 20px;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-    cursor: pointer;
-  }
-  
-  .button-voltar:hover {
-    background-color: #fff;
-    color: #000;
-    border-color: #000;
-  }
-  
-  /* Título */
-  .txt-certificado {
-    position: absolute;
-    right: 200px;
-    top: 0;
-    margin: 0;
-  }
-  
-  #certificados-title {
-    color: #fff;
-    font-family: 'Hind Siliguri', sans-serif;
-    font-weight: 500;
-    font-size: 40px;
-    margin-top: 25px;
-  }
-  .cartao-certificados {
-    position: absolute;
-    right: 50px;
-    top: 6pc;
-  
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    justify-items: center;
-    align-items: start;
-  
-    height: 600px;
-    width: 1200px;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow: auto;
-  
-    background-color: rgba(12, 12, 12, 0.53);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    border-radius: 30px 30px 30px 0px;
-  }
-  
-  /* Lista de instituições */
-  .instituicao {
-    position: absolute;
-    top: 120px;
-    left: 40px;
-  }
-  
-  .instituicao ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .instituicao li {
-    margin-bottom: 15px;
-  }
-  
-  /* Botões de instituições */
-  .btn-inst {
-    font-size: 23px;
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-family: "Inter", sans-serif;
-    cursor: pointer;
-    transition: color 0.3s;
-  }
-  
-  .btn-inst:hover {
-    color: #00e6e6;
-  }
-
-  .btn-inst.active {
-    background-color: #00e6e6;
-    color: #000;
-    padding: 5px 15px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
 }
 
+/* Fundo */
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
 
-  .top-nav {
-    position: absolute;
-    top: 20px;
-    right: 80px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-size: 20px;
-    color: #bbb;
-    font-weight: 500;
+/* Botão Voltar */
+.button-voltar {
+  background-color: transparent;
+  border: 2px solid #fff; 
+  color: #fff; 
+  border-radius: 50px; 
+  padding: 5px 15px; 
+  font-size: 16px; 
+  display: flex; 
+  align-items: center; 
+  gap: 8px; 
+  margin-left: 35px;
+  margin-top: 20px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  cursor: pointer;
+}
+
+.button-voltar:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+}
+
+/* Título */
+.txt-certificado {
+  position: absolute;
+  right: 200px;
+  top: 0;
+  margin: 0;
+}
+
+#certificados-title {
+  color: #fff;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  margin-top: 25px;
+}
+
+/* Painel de certificados */
+.cartao-certificados {
+  position: absolute;
+  right: 50px;
+  top: 6pc;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  justify-items: center;
+  align-items: start;
+
+  height: 600px;
+  width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+
+  background-color: rgba(12, 12, 12, 0.53);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 30px 30px 30px 0px;
+}
+
+/* Barra de rolagem personalizada */
+.cartao-certificados::-webkit-scrollbar {
+  width: 10px;
+}
+.cartao-certificados::-webkit-scrollbar-track {
+  background: #1c1c1c;
+  border-radius: 10px;
+}
+.cartao-certificados::-webkit-scrollbar-thumb {
+  background-color: #00e6e6;
+  border-radius: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .cartao-certificados {
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    right: 5%;
+  }
+}
+
+@media (max-width: 900px) {
+  .cartao-certificados {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .cartao-certificados {
+    grid-template-columns: 1fr;
+    width: 95%;
+    right: 2.5%;
+  }
+}
+
+/* Lista de instituições */
+.instituicao {
+  position: absolute;
+  top: 120px;
+  left: 40px;
+}
+
+.instituicao ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.instituicao li {
+  margin-bottom: 15px;
+}
+
+/* Botões de instituições */
+.btn-inst {
+  font-size: 23px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.btn-inst:hover {
+  color: #00e6e6;
+}
+
+.btn-inst.active {
+  background-color: #00e6e6;
+  color: #000;
+  padding: 5px 15px;
+}
+
+/* Top nav */
+.top-nav {
+  position: absolute;
+  top: 20px;
+  right: 80px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  color: #bbb;
+  font-weight: 500;
 }
 
 .top-nav .nav-item.active {
-    color: #fff;
-    font-weight: 700;
+  color: #fff;
+  font-weight: 700;
 }
 
 .top-nav .nav-divider {
-    color: #444;
+  color: #444;
 }
 
 .top-nav .nav-item:hover {
-    color: #00e6e6;
-    cursor: pointer;
+  color: #00e6e6;
+  cursor: pointer;
 }
 
+/* Cartões individuais */
 .cert-card {
-    background-color: rgba(20,20,20,0.9);
-    border-radius: 15px;
-    padding: 15px;
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-
-  .cert-card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 15px rgba(0,230,230,0.3);
-  }
-  
-  .cert-card img {
-    width: 100%;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-
-.btn-zoom {
-    background-color: #00e6c4;
-    border: none;
-    color: #000;
-    font-size: 22px;
-    border-radius: 8px;
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    justify-content: center;
+  background-color: rgba(20, 20, 20, 0.9);
+  border-radius: 15px;
+  padding: 15px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.cartao-certificados::-webkit-scrollbar {
-    width: 10px;
+.cert-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(0, 230, 230, 0.3);
 }
 
-.cartao-certificados::-webkit-scrollbar-track {
-    background: #1c1c1c;
-    border-radius: 10px;
+.cert-card img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.cartao-certificados::-webkit-scrollbar-thumb {
-    background-color: #00e6e6;
-    border-radius: 10px;
-}
-
-/* ==================== 
-    Modal do PDF 
+/* ====================
+   Modal do PDF pequeno
 ======================= */
-
 .pdf-modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(6px);
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-  }
-  
-  .pdf-content {
-    background-color: #fff;
-    border-radius: 12px;
-    padding: 10px;
-    width: 55%;
-    height: 70%;
-    box-shadow: 0 4px 25px rgba(0,0,0,0.3);
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    animation: zoomIn 0.25s ease;
-  }
-  
-  @keyframes zoomIn {
-    from { transform: scale(0.95); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-  }
-  
-  .pdf-content iframe {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-  }
-  
-  .close-modal {
-    position: absolute;
-    top: 8px;
-    right: 14px;
-    font-size: 28px;
-    color: #333;
-    cursor: pointer;
-    transition: color 0.2s;
-  }
-  
-  .close-modal:hover {
-    color: #00e6e6;
-  }
-  
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.pdf-content {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  width: 60%;
+  height: 65%;
+  max-width: 900px;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  animation: zoomIn 0.25s ease;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.pdf-content iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  font-size: 28px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-modal:hover {
+  color: #00e6e6;
+}

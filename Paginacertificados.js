@@ -1,11 +1,13 @@
+function voltar(){
+    window.location.href = "home.html";
+}
+
 const certImgs = document.querySelectorAll('.cert-img');
 const modal = document.getElementById('pdfModal');
 const pdfViewer = document.getElementById('pdfViewer');
 const closeModal = document.querySelector('.close-modal');
+const iframe = document.getElementById("pdfViewer");
 
-function voltar(){
-    window.location.href = "home.html";
-}
 
 const botoes = document.querySelectorAll('.btn-inst');
 botoes.forEach(btn => {
@@ -34,5 +36,26 @@ window.addEventListener('click', (e) => {
   if (e.target === modal) {
     modal.style.display = 'none';
     pdfViewer.src = '';
+  }
+});
+
+
+
+document.querySelectorAll(".cert-img").forEach(img => {
+  img.addEventListener("click", () => {
+    iframe.src = img.dataset.pdf;
+    modal.style.display = "flex";
+  });
+});
+
+closeModal.addEventListener("click", () => {
+  modal.style.display = "none";
+  iframe.src = "";
+});
+
+window.addEventListener("click", e => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+    iframe.src = "";
   }
 });
