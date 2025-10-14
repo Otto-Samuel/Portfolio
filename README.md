@@ -38,7 +38,9 @@ Sinta-se à vontade para entrar em contato comigo:
 
 ## 📄 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+```
+Este projeto é protegido por direitos autorais. Proibida a reprodução, distribuição ou modificação sem permissão dos autores.
+```
 
 ## 🤝 Contribuições
 
