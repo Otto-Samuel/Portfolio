@@ -191,8 +191,8 @@ body, html {
 .cert-card {
   background-color: rgba(20, 20, 20, 0.9);
   border-radius: 15px;
-  padding: 15px;
-  width: 260px;
+  padding: 5px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -264,5 +264,5 @@ body, html {
 }
 
 .close-modal:hover {
-  color: #00e6e6;
+  color: #00e699;
 }

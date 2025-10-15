@@ -5,7 +5,7 @@ function voltar() {
 
 // Lista de certificados por instituição
 const certificadosPorInstituicao = {
-  Cesupa: [
+  Cisco: [
     { img: "certificado/javacompleto.png", pdf: "certificado/certificado-java.pdf", alt: "Certificado Java Completo" },
     { img: "certificado/estruturadedadosJava.png", pdf: "certificado/estrutura-de-dados-java(CERTIFICADO).pdf", alt: "Estruturas de Dados em Java" },
     { img: "certificado/logicaCesupa.png", pdf: "certificado/logicaCesupa.pdf", alt: "Lógica de Programação" },
@@ -17,13 +17,19 @@ const certificadosPorInstituicao = {
     { img: "certificado/nodeUdemy.png", pdf: "certificado/nodeUdemy.pdf", alt: "Node.js Completo" }
   ],
   Microlins: [
-    { img: "certificado/windowsMicrolins.png", pdf: "certificado/windowsMicrolins.pdf", alt: "Windows e Office" },
-    { img: "certificado/redesMicrolins.png", pdf: "certificado/redesMicrolins.pdf", alt: "Introdução a Redes" }
+    { img: "certificado/microlins/cabeamentoeinfraestrutura.png", pdf: "certificado/microlins/certificado-redes-cabeamentoeinfraestrutura.pdf", alt: "Windows e Office" },
+    { img: "certificado/microlins/excelenciaatendimento.png", pdf: "certificado/microlins/certificado-redes-Excelência no Atendimento ao Cliente.pdf", alt: "Introdução a Redes" },
+    { img: "certificado/microlins/logicaeestruturacao.png",pdf: "certificado/microlins/certificado-redes-logicaeestruturação.pdf",alt: "logica e estruturacao de redes"},
+    { img: "certificado/microlins/montagemmanutencao.png",pdf: "certificado/microlins/certificado-redes-Montagem e Manutenção de Computadores.pdf",alt: "montagem e manutencao de computadores"},
+    { img: "certificado/microlins/tecnologiawireless.png",pdf: "certificado/microlins/certificado-redes-Tecnologias Wireless.pdf",alt: "tecnologias wireless"}
   ],
   Alura: [
     { img: "certificado/pythonAlura.png", pdf: "certificado/pythonAlura.pdf", alt: "Python para Iniciantes" },
     { img: "certificado/reactAlura.png", pdf: "certificado/reactAlura.pdf", alt: "React com Hooks" },
     { img: "certificado/apiAlura.png", pdf: "certificado/apiAlura.pdf", alt: "APIs REST com Node.js" }
+  ],
+  KhanAcademy: [
+    {img: "", pdf: "", alt: "" },
   ]
 };
 
