@@ -7,14 +7,11 @@ function voltar() {
 const certificadosPorInstituicao = {
   Cisco: [
     { img: "certificado/cisco/certificado-cisco-introducaoaredes.png", pdf: "certificado/cisco/_certificate_ottos5-redes.pdf", alt: "Certificado Java Completo" },
-    { img: "certificado/estruturadedadosJava.png", pdf: "certificado/estrutura-de-dados-java(CERTIFICADO).pdf", alt: "Estruturas de Dados em Java" },
-    { img: "certificado/logicaCesupa.png", pdf: "certificado/logicaCesupa.pdf", alt: "Lógica de Programação" },
-    { img: "certificado/bancoCesupa.png", pdf: "certificado/bancoCesupa.pdf", alt: "Banco de Dados" }
   ],
   Udemy: [
     { img: "certificado/htmlUdemy.png", pdf: "certificado/htmlUdemy.pdf", alt: "HTML e CSS Moderno" },
     { img: "certificado/jsUdemy.png", pdf: "certificado/jsUdemy.pdf", alt: "JavaScript Avançado" },
-    { img: "certificado/nodeUdemy.png", pdf: "certificado/nodeUdemy.pdf", alt: "Node.js Completo" }
+
   ],
   Microlins: [
     { img: "certificado/microlins/cabeamentoeinfraestrutura.png", pdf: "certificado/microlins/certificado-redes-cabeamentoeinfraestrutura.pdf", alt: "Windows e Office" },
