@@ -6,7 +6,7 @@ function voltar() {
 // Lista de certificados por instituição
 const certificadosPorInstituicao = {
   Cisco: [
-    { img: "certificado/javacompleto.png", pdf: "certificado/certificado-java.pdf", alt: "Certificado Java Completo" },
+    { img: "certificado/cisco/certificado-cisco-introducaoaredes.png", pdf: "certificado/cisco/_certificate_ottos5-redes.pdf", alt: "Certificado Java Completo" },
     { img: "certificado/estruturadedadosJava.png", pdf: "certificado/estrutura-de-dados-java(CERTIFICADO).pdf", alt: "Estruturas de Dados em Java" },
     { img: "certificado/logicaCesupa.png", pdf: "certificado/logicaCesupa.pdf", alt: "Lógica de Programação" },
     { img: "certificado/bancoCesupa.png", pdf: "certificado/bancoCesupa.pdf", alt: "Banco de Dados" }
@@ -26,7 +26,9 @@ const certificadosPorInstituicao = {
   Alura: [
     { img: "certificado/pythonAlura.png", pdf: "certificado/pythonAlura.pdf", alt: "Python para Iniciantes" },
     { img: "certificado/reactAlura.png", pdf: "certificado/reactAlura.pdf", alt: "React com Hooks" },
-    { img: "certificado/apiAlura.png", pdf: "certificado/apiAlura.pdf", alt: "APIs REST com Node.js" }
+    { img: "certificado/apiAlura.png", pdf: "certificado/apiAlura.pdf", alt: "APIs REST com Node.js" },
+    { img: "certificado/apiAlura.png", pdf: "certificado/apiAlura.pdf", alt: "APIs REST com Node.js" },
+    { img: "certificado/apiAlura.png", pdf: "certificado/apiAlura.pdf", alt: "APIs REST com Node.js" },
   ],
   KhanAcademy: [
     {img: "", pdf: "", alt: "" },

@@ -12,12 +12,6 @@ Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresent
   </a>
 </p>
 
-## 📂 Estrutura do Projeto
-
-```
-
-```
-
 ## ✨ Funcionalidades
 
 - ✅ Interface responsiva e moderna
