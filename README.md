@@ -25,8 +25,6 @@ Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresent
 
 Sinta-se à vontade para entrar em contato comigo:
 
-- **GitHub**: [@Otto-Samuel](https://github.com/Otto-Samuel)
-- **LinkedIn**: [otto-samuel](https://linkedin.com/in/otto-samuel)
 - **Email**: ottos565@gmail.com
 - **Portfolio**: [seu-portfolio.com](https://portfolio-ottosamuel.onrender.com)
 
