@@ -42,4 +42,4 @@ Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma issue
 
 ⭐ Se você gostou deste projeto, não esqueça de dar uma estrela!
 
-Feito com ❤️ por Otto Samuel
+Feito por Otto Samuel
